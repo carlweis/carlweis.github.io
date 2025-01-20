@@ -1,37 +1,35 @@
-## Welcome to GitHub Pages
+---
+title: Carl Weis | Software Developer & Educator
+layout: default
+---
 
-You can use the [editor on GitHub](https://github.com/carlweis/carlweis.github.io/edit/main/index.md) to maintain and preview the content for your website in Markdown files.
+# Hi, I’m Carl Weis! 🚀
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+I’m a software developer passionate about helping others learn to code, build apps, and create amazing projects. Welcome to my personal site!
 
-### Markdown
+---
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## Connect With Me
 
-```markdown
-Syntax highlighted code block
+📺 **[YouTube](https://www.youtube.com/@carlweiscodes)**  
+🎮 **[Twitch](https://www.twitch.tv/carlweiscodes)**  
+📸 **[Instagram](https://www.instagram.com/carlweiscodes)**  
+🐦 **[Twitter/X](https://twitter.com/carlweiscodes)**  
+🌐 **[GitHub](https://github.com/carlweiscodes)**  
 
-# Header 1
-## Header 2
-### Header 3
+---
 
-- Bulleted
-- List
+## About Me
 
-1. Numbered
-2. List
+I specialize in:
+- Software development
+- Mobile app creation
+- Teaching and creating online courses
 
-**Bold** and _Italic_ and `Code` text
+Let’s code, learn, and build something awesome together!
 
-[Link](url) and ![Image](src)
-```
+---
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+## Get in Touch
 
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/carlweis/carlweis.github.io/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+Feel free to reach out to me on any of the platforms above, or email me at: **[carlweiscodes@gmail.com](mailto:carlweiscodes@gmail.com)**
