@@ -1,11 +1,11 @@
 :root {
-  --primary-color: #2563eb;
-  --primary-light: #3b82f6;
-  --text-dark: #111827;
-  --text-light: #4b5563;
-  --bg-white: #ffffff;
-  --bg-light: #f9fafb;
-  --border-color: #e5e7eb;
+  --primary-color: #570BA3;
+  --primary-light: #7300DE;
+  --text-dark: #f4f4f5;
+  --text-light: #a1a1aa;
+  --bg-dark: #18181b;
+  --bg-zinc: #27272a;
+  --border-color: #3f3f46;
 }
 
 * {
@@ -15,11 +15,8 @@
 }
 
 body {
-  font-family:
-    "Inter",
-    -apple-system,
-    sans-serif;
-  background: var(--bg-white);
+  font-family: "Inter", -apple-system, sans-serif;
+  background: var(--bg-dark);
   color: var(--text-dark);
   line-height: 1.6;
 }
@@ -34,7 +31,7 @@ body {
 header {
   text-align: center;
   padding: 4rem 1rem;
-  background: var(--bg-white);
+  background: var(--bg-dark);
 }
 
 .flex {
@@ -46,15 +43,9 @@ header {
 }
 
 .justify-center {
-  justify-center: center;
+  justify-content: center;
 }
 
-header .flex {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
 header img {
   display: block;
   width: 280px;
@@ -62,7 +53,8 @@ header img {
   object-fit: cover;
   border-radius: 50%;
   margin: 2rem 0;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  border: 2px solid var(--border-color);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease;
 }
 
@@ -87,7 +79,7 @@ header p {
 
 /* Social Links */
 .social-links {
-  background: var(--bg-light);
+  background: var(--bg-zinc);
   padding: 3rem 0;
 }
 
@@ -105,7 +97,7 @@ header p {
   align-items: center;
   gap: 0.75rem;
   padding: 0.75rem 1.5rem;
-  background: var(--bg-white);
+  background: var(--bg-dark);
   border-radius: 12px;
   text-decoration: none;
   color: var(--text-light);
@@ -117,18 +109,38 @@ header p {
   transform: translateY(-2px);
   color: var(--primary-color);
   border-color: var(--primary-light);
-  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.1);
+  box-shadow: 0 4px 12px rgba(96, 165, 250, 0.1);
 }
 
 /* About Section */
 .about-section {
   padding: 5rem 0;
-  background: var(--bg-white);
+  background: var(--bg-dark);
 }
 
 .specialty-list {
-  max-width: 700px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1000px;
   margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.specialty-item {
+  background: var(--bg-zinc);
+  padding: 2.5rem;
+  border-radius: 12px;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+}
+
+.specialty-item i {
+  font-size: 2rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+  display: block;
 }
 
 h2 {
@@ -141,63 +153,17 @@ h2 {
 h3 {
   font-size: 1.25rem;
   color: var(--text-dark);
-  margin-bottom: 1.5rem;
-}
-
-.about-section {
-    padding: 5rem 0;
-    background: var(--bg-white);
-}
-
-.specialty-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    max-width: 1000px;
-    margin: 2rem auto;
-    padding: 0 1rem;
-}
-
-.specialty-item {
-    background: var(--bg-light);
-    padding: 2.5rem;
-    border-radius: 12px;
-    position: relative;
-    overflow: hidden;
-    border: solid 1px #eee;
-}
-
-.specialty-item i {
-    font-size: 2rem;
-    color: var(--text-dark);
-    margin-bottom: 1rem;
-    display: block;
-}
-
-.specialty-item h3 {
-    font-size: 1.25rem;
-    margin-bottom: 1rem;
-    color: var(--text-dark);
+  margin-bottom: 1rem;
 }
 
 .specialty-item p {
-    color: var(--text-light);
-    line-height: 1.6;
+  color: var(--text-light);
+  line-height: 1.6;
 }
 
-@media (max-width: 768px) {
-    .specialty-list {
-        grid-template-columns: 1fr;
-        padding: 0 1rem;
-    }
-
-    .specialty-item {
-        padding: 2rem;
-    }
-}
 /* Contact Section */
 .contact-section {
-  background: var(--bg-light);
+  background: var(--bg-zinc);
   padding: 5rem 0;
   text-align: center;
 }
@@ -206,8 +172,8 @@ h3 {
   display: inline-flex;
   align-items: center;
   gap: 0.75rem;
-  background: var(--text-dark);
-  color: white;
+  background: var(--primary-color);
+  color: var(--text-light);
   padding: 1rem 2rem;
   border-radius: 12px;
   text-decoration: none;
@@ -217,7 +183,8 @@ h3 {
 
 .email-button:hover {
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
+  background: var(--primary-light);
+  box-shadow: 0 4px 12px rgba(96, 165, 250, 0.2);
 }
 
 /* Responsive Design */
@@ -237,6 +204,15 @@ h3 {
 
   .social-link {
     padding: 0.6rem 1.2rem;
+  }
+
+  .specialty-list {
+    grid-template-columns: 1fr;
+    padding: 0 1rem;
+  }
+
+  .specialty-item {
+    padding: 2rem;
   }
 }
 
