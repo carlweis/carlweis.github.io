@@ -3,98 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carl Weis - Software Engineer</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Carl Weis</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 2rem;
+            background-color: #fafafa;
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        p {
+            margin-bottom: 2rem;
+            color: #555;
+        }
+
+        .profile {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 3rem;
+            text-align: center;
+        }
+
+        .profile img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin-bottom: 1.5rem;
+            border: 2px solid #eee;
+        }
+
+        .links {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .links a {
+            color: #555;
+            font-size: 1.25rem;
+            transition: color 0.2s;
+        }
+
+        .links a:hover {
+            color: #000;
+        }
+
+        footer {
+            margin-top: 3rem;
+            text-align: center;
+            font-size: 0.9rem;
+            color: #777;
+        }
+
+        footer a {
+            color: #555;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-    <header class="container">
-        <div class="flex items-center justify-center">
-          <img src="images/headshot.jpg" alt="Headshot of Carl Weis" class="rounded-full border" width="300"/>
-        </div>
-        <h1>Hi, I'm Carl Weis!</h1>
-        <p>
-          I’m a software engineer with over 20 years of experience building software, web, and mobile applications. With a strong background in UI/UX design and a passion for teaching, and helping others learn to code and grow their skills.
-        </p>
-        <br/>
-    </header>
+    <main class="profile">
+        <img src="images/headshot.jpg" alt="Carl Weis">
+        <h1>Carl Weis</h1>
+        <p>Software engineer with 20+ years of experience building web, mobile, and software applications.</p>
 
-    <section class="social-links">
-        <div class="container">
-            <h2>Connect With Me</h2>
-            <div class="social-grid">
-                <a href="https://www.youtube.com/@carlweis" class="social-link">
-                    <i class="fab fa-youtube" style="color: #ff0000;"></i>
-                    <span>YouTube</span>
-                </a>
-                <a href="https://www.twitch.tv/carlweiscodes" class="social-link">
-                    <i class="fab fa-twitch" style="color: #9146ff;"></i>
-                    <span>Twitch</span>
-                </a>
-                <a href="https://www.instagram.com/carlweiscodes/" class="social-link">
-                    <i class="fab fa-instagram" style="color: #e4405f;"></i>
-                    <span>Instagram</span>
-                </a>
-                <a href="https://x.com/carlweiscodes" class="social-link">
-                  <i class="fab fa-x" style="color: #333;"></i>
-                  <i class="fa-brands fa-x-twitter" style="color: #000000;"></i>
-                  <span>X.com</span>
-                </a>
-                <a href="https://github.com/carlweis" class="social-link">
-                    <i class="fab fa-github" style="color: #333;"></i>
-                    <span>GitHub</span>
-                </a>
-            </div>
+        <div class="links">
+            <a href="https://github.com/carlweis" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://www.youtube.com/@carlweis" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="https://x.com/carlweiscodes" aria-label="X"><i class="fab fa-x"></i></a>
+            <a href="https://www.instagram.com/carlweiscodes/" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.twitch.tv/carlweiscodes" aria-label="Twitch"><i class="fab fa-twitch"></i></a>
         </div>
-    </section>
+    </main>
 
-    <section class="about-section container">
-        <h2>About Me</h2>
-        <div class="specialty-list">
-            <div class="specialty-item">
-                <i class="fas fa-code"></i>
-                <h3>Software Development</h3>
-                <p>Building robust and scalable applications with modern technologies.</p>
-            </div>
-            <div class="specialty-item">
-                <i class="fas fa-globe"></i>
-                <h3>Web Development</h3>
-                <p>Creating responsive and dynamic web applications with cutting-edge frameworks.</p>
-            </div>
-            <div class="specialty-item">
-                <i class="fas fa-mobile-alt"></i>
-                <h3>Mobile App Creation</h3>
-                <p>Crafting intuitive mobile experiences for iOS.</p>
-            </div>
-            <div class="specialty-item">
-                <i class="fas fa-chalkboard-teacher"></i>
-                <h3>Teaching & Courses</h3>
-                <p>Sharing knowledge and helping others grow in their coding journey.</p>
-            </div>
-            <div class="specialty-item">
-                <i class="fas fa-video"></i>
-                <h3>Videography</h3>
-                <p>Producing engaging educational content and technical tutorials.</p>
-            </div>
-            <div class="specialty-item">
-                <i class="fas fa-paint-brush"></i>
-                <h3>UI/UX Design</h3>
-                <p>Designing intuitive user experiences and beautiful interfaces.</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="contact-section">
-        <div class="container">
-            <h2>Get in Touch</h2>
-            <p>Feel free to reach out to me on any of the platforms above, or email me at:</p>
-            <br/>
-            <a href="mailto:carlweiscodes@gmail.com" class="email-button">
-                <i class="fas fa-envelope"></i>
-                <span>carlweiscodes@gmail.com</span>
-            </a>
-        </div>
-    </section>
+    <footer>
+        <a href="mailto:carl@carlweis.com">carl@carlweis.com</a>
+    </footer>
 </body>
 </html>
